@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CommonHooks from "./hooks/commonHooks";
 import CustomHooks from "./hooks/customHooks";
 
 const AdvancedTopics = () => {
@@ -9,6 +10,9 @@ const AdvancedTopics = () => {
       <div>
         <button onClick={() => setCurrentTopic(<CustomHooks />)}>
           Custom Hooks
+        </button>
+        <button onClick={() => setCurrentTopic(<CommonHooks />)}>
+          Commom Hooks
         </button>
       </div>
       {currentTopic}
