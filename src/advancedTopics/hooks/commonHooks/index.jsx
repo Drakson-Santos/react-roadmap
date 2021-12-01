@@ -1,6 +1,7 @@
 import React from 'react';
 import UseCallbackHooks from './useCalback';
 import UseMemoHooks from './useMemo';
+import UseReducerHooks from './useReducer';
 import UseRefHooks from './useRef';
 
 const CommonHooks = () => {
@@ -19,6 +20,10 @@ const CommonHooks = () => {
             <div>
                 <h1>Use Memo</h1>
                 <UseMemoHooks />
+            </div>
+            <div>
+                <h1>Use Reducer</h1>
+                <UseReducerHooks />
             </div>
         </div>
     )
