@@ -1,5 +1,6 @@
 import React from 'react';
 import UseCallbackHooks from './useCalback';
+import UseContextHooks from './useContext';
 import UseMemoHooks from './useMemo';
 import UseReducerHooks from './useReducer';
 import UseRefHooks from './useRef';
@@ -24,6 +25,10 @@ const CommonHooks = () => {
             <div>
                 <h1>Use Reducer</h1>
                 <UseReducerHooks />
+            </div>
+            <div>
+                <h1>Use Context</h1>
+                <UseContextHooks />
             </div>
         </div>
     )
