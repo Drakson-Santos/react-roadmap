@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CommonHooks from "./hooks/commonHooks";
 import CustomHooks from "./hooks/customHooks";
+import Refs from "./refs";
 
 const AdvancedTopics = () => {
   const [currentTopic, setCurrentTopic] = useState(<CustomHooks />);
@@ -13,6 +14,9 @@ const AdvancedTopics = () => {
         </button>
         <button onClick={() => setCurrentTopic(<CommonHooks />)}>
           Commom Hooks
+        </button>
+        <button onClick={() => setCurrentTopic(<Refs />)}>
+          Refs
         </button>
       </div>
       {currentTopic}
